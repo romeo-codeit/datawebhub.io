@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataWebHub - Elevate your brand</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo">
+        <img src="img/logo.png" alt="logo" width="40">
+        <span>DataWebHub®</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="img/hero.webp" alt="hero image" width="900">
+      </div>
+      <h1>Elevate your brand</h1>
+      <p class="subtitle">Precision web Design, Data Analytics, and Educational Research.</p>
+      <a href="#contact" class="cta-button">Get Started</a>
+    </div>
+
+  </section>
+
+  <!-- Floating Particles -->
+  <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+
+  <!-- Interactive Mouse Follower -->
+  <div class="mouse-follower" id="mouseFollower"></div>
+
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="services-container">
+      <div class="service-card">
+        <h3 class="service-title">Frontend Web Design</h3>
+        <p class="service-description">
+          Sleek, responsive websites built with HTML, CSS, JavaScript, and React — clean code, fast loading, pixel-perfect results.
+        </p>
+        <div class="service-visual frontend"></div>
+      </div>
+
+      <div class="service-card data-analysis">
+        <h3 class="service-title">Data Entry & Analysis</h3>
+        <p class="service-description">
+          From raw data to polished insight — expert in SPSS, Stata, regression models, Multinomial analysis, Multivariate analysis, Double Hurdle, and more.
+        </p>
+        <div class="service-visual data-analysis"></div>
+      </div>
+
+      <div class="service-card">
+        <h3 class="service-title">Educational Research</h3>
+        <p class="service-description">
+          Complete project support — research topics, full write-ups, data analysis, and slide presentations for final year success.
+        </p>
+        <div class="service-visual research"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about-section" id="about">
+    <h2 class="about-title">About Romeo</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>I'm a frontend web developer, I specialize in creating modern, responsive websites that are not only visually stunning but also optimized for performance and accessibility. My work combines a deep understanding of frontend technologies with a passion for data analysis, allowing me to deliver solutions that are both functional and impactful.</p>
+        <p>fast. reliable. education-smart.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="work">
+    <h2 class="projects-title">Projects</h2>
+
+    <!-- Website Development Row -->
+    <div class="projects-row">
+      <h3 class="projects-row-title">Website Development</h3>
+      <div class="projects-container">
+        <button id="backBtn1" class="carousel-button"><i class="bi bi-caret-left"></i></button>
+        <div class="projects-carousel" id="carousel1">
+          <a href="https://romeo-codeit.github.io/dev-portfolio/" target="_blank" class="project-card-link">
+            <div class="project-card web">
+              <div class="project-image">
+                <img src="img/devflux_home.png" alt="Devflux Platform Screenshot">
+              </div>
+              <div class="project-content">
+                <h4 class="project-title">Devflux Portfolio</h4>
+                <p class="project-description">Modern responsive portfolio showcases the word of a frontend wesite designer and data analyst</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScrpt</span>
+                </div>
+                <div class="project-status">Live</div>
+              </div>
+            </div>
+          </a>
+          <a href="https://romeo-codeit.github.io/todo-app/" target="_blank" class="project-card-link">
+            <div class="project-card web">
+              <div class="project-image">
+                <img src="img/todo-app.png" alt="To-do app">
+              </div>
+              <div class="project-content">
+                <h4 class="project-title">To Do App</h4>
+                <p class="project-description">Task management app with real-time collaboration and notifications</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-status">Live</div>
+              </div>
+            </div>
+          </a>
+          <a href="" class="project-card-link">
+            <div class="project-card web">
+              <div class="project-image">
+                <img src="img/Echo.png" alt="Echowave music player">
+              </div>
+              <div class="project-content">
+                <h4 class="project-title">Echowave music player</h4>
+                <p class="project-description">A modern music player with a sleek interface and powerful features like audio visualization, theme toggle and more.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-status">Live</div>
+              </div>
+            </div>
+          </a>
+          <a href="https://romeo-codeit.github.io/Math-game/" target="_blank" class="project-card-link">
+            <div class="project-card web">
+              <div class="project-image">
+                <img src="img/math.png" alt="Math Game Screenshot">
+              </div>
+              <div class="project-content">
+                <h4 class="project-title">Math Game</h4>
+                <p class="project-description">Interactive game for practicing math skills with real-time feedback</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-status">Live</div>
+              </div>
+            </div>
+          </a>
+          <a href="https://romeo-codeit.github.io/calculator-app/" target="_blank" class="project-card-link">
+            <div class="project-card web">
+              <div class="project-image">
+                <img src="img/calculator.png" alt="calculator screenshot">
+              </div>
+              <div class="project-content">
+                <h4 class="project-title">Simple Modern Calculator</h4>
+                <p class="project-description">A sleek and modern calculator app with a user-friendly interface.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-status">Live</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <button id="nextBtn1" class="carousel-button"><i class="bi bi-caret-right"></i></button>
+      </div>
+    </div>
+
+    <!-- Data Analysis Row -->
+    <div class="projects-row">
+      <h3 class="projects-row-title">Data Analysis</h3>
+      <div class="projects-container">
+        <button id="backBtn2" class="carousel-button"><i class="bi bi-caret-left"></i></button>
+        <div class="projects-carousel" id="carousel2">
+
+          <div class="project-card data">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=250&fit=crop&auto=format" alt="Financial Inclusion Screenshot">
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Financial Inclusion Among Farmers</h4>
+              <p class="project-description">Used double hurdle and probit models in Stata to analyze credit access in Enugu State.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Stata</span>
+                <span class="tech-tag">Double Hurdle</span>
+                <span class="tech-tag">Probit</span>
+              </div>
+              <div class="project-status">Delivered</div>
+            </div>
+          </div>
+
+          <div class="project-card data">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=250&fit=crop&auto=format" alt="Health Literacy Screenshot">
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Health Literacy & Medication Use</h4>
+              <p class="project-description">Applied HLQ & MMAS-8 scales with chi-square and regression in SPSS among students.</p>
+              <div class="project-tech">
+                <span class="tech-tag">SPSS</span>
+                <span class="tech-tag">Chi-square</span>
+                <span class="tech-tag">Regression</span>
+              </div>
+              <div class="project-status">Delivered</div>
+            </div>
+          </div>
+
+          <div class="project-card data">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=250&fit=crop&auto=format" alt="Agri Finance Screenshot">
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Agricultural Finance Access</h4>
+              <p class="project-description">Used multinomial logit & double hurdle models in Stata to study vegetable marketers.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Stata</span>
+                <span class="tech-tag">Multinomial Logit</span>
+                <span class="tech-tag">Double Hurdle</span>
+              </div>
+              <div class="project-status">Delivered</div>
+            </div>
+          </div>
+
+          <div class="project-card data">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400&h=250&fit=crop&auto=format" alt="Gender Roles Screenshot">
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Gender & Labor in Cooperatives</h4>
+              <p class="project-description">Explored gender influence on labor roles using descriptive & inferential SPSS tools.</p>
+              <div class="project-tech">
+                <span class="tech-tag">SPSS</span>
+                <span class="tech-tag">Descriptive</span>
+                <span class="tech-tag">Inferential</span>
+              </div>
+              <div class="project-status">Delivered</div>
+            </div>
+          </div>
+
+          <div class="project-card data">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop&auto=format" alt="Malaria Prevalence Screenshot">
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Malaria & Healthcare Preferences</h4>
+              <p class="project-description">Survey-based analysis of malaria prevalence and treatment choices in rural areas.</p>
+              <div class="project-tech">
+                <span class="tech-tag">SPSS</span>
+                <span class="tech-tag">Survey</span>
+                <span class="tech-tag">Healthcare</span>
+              </div>
+              <div class="project-status">Delivered</div>
+            </div>
+          </div>
+
+          <div class="project-card data">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400&h=250&fit=crop&auto=format" alt="Programming Efficacy Screenshot">
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Self-Efficacy & Programming Grades</h4>
+              <p class="project-description">Studied how self-belief impacts programming performance using t-tests & correlation.</p>
+              <div class="project-tech">
+                <span class="tech-tag">SPSS</span>
+                <span class="tech-tag">Correlation</span>
+                <span class="tech-tag">T-Test</span>
+              </div>
+              <div class="project-status">Delivered</div>
+            </div>
+          </div>
+
+          <div class="project-card data">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop&auto=format" alt="AI Learning Screenshot">
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">AI & Personalized Learning</h4>
+              <p class="project-description">Assessed AI usage in education with Likert scale and regression analysis in SPSS.</p>
+              <div class="project-tech">
+                <span class="tech-tag">SPSS</span>
+                <span class="tech-tag">Likert</span>
+                <span class="tech-tag">Regression</span>
+              </div>
+              <div class="project-status">Delivered</div>
+            </div>
+          </div>
+
+          <div class="project-card data">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop&auto=format" alt="Online Learning Screenshot">
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">E-Learning & Academic Performance</h4>
+              <p class="project-description">Used correlation and regression to measure how online learning affected results.</p>
+              <div class="project-tech">
+                <span class="tech-tag">SPSS</span>
+                <span class="tech-tag">Regression</span>
+                <span class="tech-tag">E-Learning</span>
+              </div>
+              <div class="project-status">Delivered</div>
+            </div>
+          </div>
+
+        </div>
+        <button id="nextBtn2" class="carousel-button"><i class="bi bi-caret-right"></i></button>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="testimonials-header">
+      <h2 class="testimonials-title">What People Say</h2>
+      <p class="testimonials-subtitle">Trusted by students, researchers, and small teams.</p>
+    </div>
+
+    <div class="testimonials-container">
+      <button id="backBtn" class="carousel-button"><i class="bi bi-caret-left"></i></button>
+
+      <div class="testimonials-carousel" id="testimonials-carousel">
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            I submitted my project without any corrections. The SPSS results were clearly explained, and my supervisor was impressed.
+          </p>
+          <div>
+            <p class="testimonial-author">Final Year Student</p>
+            <p class="testimonial-role">UNN — Education Faculty</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            I just sent him the result tables, and he turned everything into a clean, understandable report. My defense panel had no complaints.
+          </p>
+          <div>
+            <p class="testimonial-author">Postgraduate Client</p>
+            <p class="testimonial-role">Business Admin Dept</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            The way he broke down the odds ratios and marginal effects made me look like I truly understood my topic. No single correction.
+          </p>
+          <div>
+            <p class="testimonial-author">Master’s Student</p>
+            <p class="testimonial-role">Public Health Program</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            Romeo designed a smooth, clean frontend for my business website. Everything worked perfectly across devices.
+          </p>
+          <div>
+            <p class="testimonial-author">Startup Founder</p>
+            <p class="testimonial-role">Web Development Project</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            Fast delivery and very easy to communicate with. He even suggested layout ideas I hadn’t thought of.
+          </p>
+          <div>
+            <p class="testimonial-author">Returning Client</p>
+            <p class="testimonial-role">NGO Website Upgrade</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            I didn’t know much about statistics, but he explained everything simply. I passed my defense confidently.
+          </p>
+          <div>
+            <p class="testimonial-author">Undergraduate Researcher</p>
+            <p class="testimonial-role">Agricultural Economics</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            Whether it’s Frontend development or data analysis, Romeo delivers. Reliable and skilled in both areas.
+          </p>
+          <div>
+            <p class="testimonial-author">Freelance Collaborator</p>
+            <p class="testimonial-role">Joint Research Project</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button id="nextBtn" class="carousel-button"><i class="bi bi-caret-right"></i></button>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <!-- Header -->
+    <div class="contact-header">
+      <h2>Let's Connect</h2>
+      <p>Tell us what you need.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form-container">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Logo Section -->
+      <div class="footer-section logo-section">
+        <img src="img/logo.png" alt="footer logo" width="80">
+      </div>
+
+      <!-- Social Links -->
+      <div class="footer-section">
+        <h3>Social</h3>
+        <ul>
+          <li><a href="https://x.com/thedatawebhub">Twitter</a></li>
+          <li><a href="https://github.com/romeo-codeit">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/divine-timothy-356475317/">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <!-- Company Links -->
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Links -->
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:thedatawebhub@gmail.com?subject=Website Inquiry&body=Hi Romeo, I found your portfolio online...">Email</a></li>
+          <li><a href="https://web.facebook.com/profile.php?id=100078244042977">Facebook</a></li>
+          <li><a href="https://www.instagram.com/boy_who_hates_rain/">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/index.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init("Pn4AVFlghDEhBRty_"); // Your public key
+  </script>
+
+</body>
+</html>
