@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://datawebhub.netlify.app/sitemap.xml
